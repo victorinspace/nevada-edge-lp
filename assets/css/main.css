@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Black Han Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 p {
@@ -19,13 +19,14 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 #header {
   background-color: rgba(0,0,0,0.7);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: absolute;
   width: 1100px;
 }
 
 #header-logo {
-  max-height: 60px;
+  max-height: 50px;
+
 }
 
 #header-text {
@@ -46,7 +47,16 @@ p {
   background-image: url('http://placehold.jp/1000x500.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 200px;
+  padding: 200px 0 50px;
+  /* border: 2px solid red; */
+}
+
+#hero-copy-main {
+  /* border: 2px solid red; */
+}
+
+#hero-title {
+  color: #fff;
 }
 
 #hero-title > span {
@@ -54,7 +64,8 @@ p {
 }
 
 #hero-copy {
-  border: 2px solid red;
+  color: #fff;
+  /* border: 2px solid red; */
 }
 /* ------------------------------------------------------------------------------------------ */
 
@@ -63,12 +74,13 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 .form {
   background: var(--primary-color);
-  max-width: 360px;
+  max-width: 30%;
   padding: 25px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   position: relative;
-  z-index: 1;
+  /* border: 2px solid red; */
+  margin: auto;
 }
 
 .form input {
@@ -96,6 +108,7 @@ p {
 #guide-section {
   background-color: var(--main-bg);
   color: #fff;
+  padding: 30px
 }
 
 #guide-section p {
@@ -105,7 +118,8 @@ p {
 
 #guide-heading {
   color: var(--primary-color);
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  padding: 30px 0;
 }
 
 #guide-bullet-heading {
@@ -119,7 +133,8 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 #about-section {
   background-color: #fff;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  padding: 50px 0;
 }
 
 #about-heading {
@@ -130,17 +145,20 @@ p {
 
 /* TrsutPilot */
 /* ------------------------------------------------------------------------------------------ */
-#tp-section-heading {
-  color: var(--primary-color);
-}
-
 #tp-section {
   background: var(--main-bg);
+  padding: 50px 0 20px;
+}
+
+#tp-section-heading {
+  color: var(--primary-color);
 }
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* Footer */
 /* ------------------------------------------------------------------------------------------ */
-
+#footer-section {
+  padding: 30px;
+}
 /* ------------------------------------------------------------------------------------------ */
