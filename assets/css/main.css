@@ -1,0 +1,110 @@
+/* General */
+/* ------------------------------------------------------------------------------------------ */
+:root {
+  --primary-color: #00FFD9;
+  --main-bg: rgb(32,39,41);
+}
+
+body {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+p {
+  color: #000;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* Header */
+/* ------------------------------------------------------------------------------------------ */
+#header {
+  background-color: rgba(0,0,0,0.7);
+  border: 2px solid red;
+  position: absolute;
+  width: 1100px;
+}
+
+#header-logo {
+  max-height: 60px;
+}
+
+#header-text {
+  font-size: 20px;
+  color: #fff;
+}
+
+#header-number {
+  font-size: 25px;
+  color: var(--primary-color);
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* Hero */
+/* ------------------------------------------------------------------------------------------ */
+#hero {
+  background-image: url('http://placehold.jp/15000x500.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+
+#hero-title > span {
+  color: var(--primary-color)
+}
+
+#hero-copy {
+  border: 2px solid red;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* Form */
+/* ------------------------------------------------------------------------------------------ */
+.form {
+  position: relative;
+  z-index: 1;
+  background: var(--primary-color);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: var(--main-bg);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* Guide */
+#guide-section {
+  background-color: var(--main-bg);
+  color: #fff;
+}
+
+#guide-heading {
+  color: var(--primary-color);
+}
