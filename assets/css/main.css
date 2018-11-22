@@ -1,3 +1,4 @@
+/* ------------------------------------------------------------------------------------------ */
 /* General */
 /* ------------------------------------------------------------------------------------------ */
 :root {
@@ -12,21 +13,73 @@ body {
 p {
   color: #000;
 }
+
+.container-fluid {
+  padding-left: 0;
+}
+
+@media (max-width) {
+  /* .the-body {
+    width: 100px;
+  } */
+
+  .container-fluid {
+    padding-left: 0;
+  }
+}
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* Header */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #header {
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    margin-left: 0;
+  }
+
+  .navbar {
+    padding: 0px;
+    width: 375px;
+  }
+
+  #header-logo {
+    max-width: 227px;
+    padding-right: 32px;
+  }
+
+  #header-text {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  #header-number {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 576px) {
+  #header {
+    margin-left: 233px;
+  }
+}
+
 #header {
   background-color: rgba(0,0,0,0.7);
   /* border: 2px solid red; */
+  /* margin-left: 233px; */
   position: absolute;
   width: 1100px;
 }
 
+.navbar {
+  width: 100%;
+}
+
 #header-logo {
   max-height: 50px;
-
 }
 
 #header-text {
@@ -41,8 +94,37 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* Hero */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #hero {
+    background-image: url('http://placehold.jp/1000x500.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0 50px;
+    /* border: 2px solid red; */
+    width: 375px;
+  }
+
+  #hero-copy-main {
+    width: 375px;
+    /* border: 2px solid red; */
+  }
+
+  #hero-title {
+    color: #fff;
+  }
+
+  #hero-title > span {
+    color: var(--primary-color)
+  }
+
+  #hero-copy {
+    color: #fff;
+    /* border: 2px solid red; */
+  }
+}
 #hero {
   background-image: url('http://placehold.jp/1000x500.png');
   background-size: cover;
@@ -70,11 +152,43 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* Form */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  .form {
+    background: var(--primary-color);
+    width: 92%;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    position: relative;
+    /* border: 2px solid red; */
+    margin: auto;
+  }
+
+  .form input {
+    border: none;
+    background: #f2f2f2;
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  #download-button {
+    width: 100%;
+    text-transform: uppercase;
+    padding: 15px;
+    background: var(--main-bg);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
+
 .form {
   background: var(--primary-color);
-  max-width: 30%;
+  max-width: 300px;
   padding: 25px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -103,8 +217,16 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* Guide */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #guide-section {
+    width: 375px;
+    margin-left: 0;
+
+  }
+}
 #guide-section {
   background-color: var(--main-bg);
   color: #fff;
@@ -129,8 +251,19 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* About */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #about-section {
+    width: 375px;
+  }
+
+  #about-section-image {
+    width: 205px;
+  }
+}
+
 #about-section {
   background-color: #fff;
   /* border: 2px solid red; */
@@ -143,8 +276,16 @@ p {
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* TrsutPilot */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #tp-section {
+    width: 375px;
+    margin-left: 0;
+  }
+}
+
 #tp-section {
   background: var(--main-bg);
   padding: 50px 0 20px;
@@ -153,11 +294,25 @@ p {
 #tp-section-heading {
   color: var(--primary-color);
 }
+
+#five-star-widget {
+  /* border: 2px solid red; */
+  padding-top: 75px;
+  position: absolute;
+}
 /* ------------------------------------------------------------------------------------------ */
 
 
+/* ------------------------------------------------------------------------------------------ */
 /* Footer */
 /* ------------------------------------------------------------------------------------------ */
+@media (max-width: 576px) {
+  #footer-section {
+    width: 375px;
+    margin-left: 0;
+  }
+}
+
 #footer-section {
   padding: 30px;
 }

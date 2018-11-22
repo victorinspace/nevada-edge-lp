@@ -13,26 +13,31 @@
 </head>
 <body>
   <!-- main container -->
-  <div class="container-fluid">
+  <div id="the-body" class="container-fluid">
 
     <!-- header -->
-    <div class="container">
-        <header id="header">
+    <header id="header">
+      <div class="container">
+        <div class="row">
           <nav class="navbar header-top navbar-dark bg-dark">
-            <img class="navbar-brand" id="header-logo" src="./assets/images/logo/NCH-logoANDwordmark-white.png" alt="Nevada Corporate Headquarters Logo">
-            
-            <ul class="navbar-nav">
-              <li class="navbar-item col-sm-12 col-6">
-                <p id="header-text">Call Now: <a id="header-number" href="#">1-866-410-5023</a></p>
-              </li>
-            </ul>
+            <div class="col-md-9 col-sm-12 justify-content-start">
+              <img class="navbar-brand" id="header-logo" src="./assets/images/logo/NCH-logoANDwordmark-white.png" alt="Nevada Corporate Headquarters Logo">
+            </div>
+            <div class="col-md-3 col-sm-12 justify-content-end">
+              <ul class="navbar-nav">
+                <li class="navbar-item">
+                  <p id="header-text">Call Now: <a id="header-number" href="#">1-866-410-5023</a></p>
+                </li>
+              </ul>
+            </div>
           </nav>
-
-        </header>
-    </div><!-- header -->
+        </div>
+      </div>
+    </header>
+    <!-- header -->
 
     <!-- hero -->
-    <section id="hero" class="container-fluid">
+    <section id="hero">
       <!-- nevada edge hero container -->
       <div class="container">
         <div class="row">
@@ -44,10 +49,12 @@
             </div>
             <!-- copy -->
             <div>
-              <p id="hero-copy" class="lead">This is the newly released 5th Edition, authored by world-famous entrepreneur Cort Christie, packed with everything you need to know about the benefits of forming your LLC or corporation in Nevada.</p>
+              <p id="hero-copy" class="lead">This is the newly released 5th Edition, authored by world-famous entrepreneur
+                Cort Christie, packed with everything you need to know about the benefits of forming your LLC or
+                corporation in Nevada.</p>
             </div><!-- copy -->
           </div><!-- hero copy -->
-          
+    
           <!-- form -->
           <div class="form col-sm-12 col-md-6">
             <form role="form">
@@ -68,7 +75,7 @@
         </div>
       </div><!-- nevada edge hero container -->
     </section><!-- hero -->
-
+    
     <!-- guide -->
     <section id="guide-section" class="container-fluid">
       <!-- guide container -->
@@ -76,7 +83,7 @@
         <div class="mx-auto">
           <h2 id="guide-heading" class="text-center">IN THIS GUIDE YOU WILL LEARN:</h2>
         </div>
-        
+    
         <!-- bullet points container -->
         <div class="row">
           <div class="col-sm-12 col-md-3">
@@ -90,12 +97,12 @@
           </div>
           <div class="col-sm-12 col-md-3">
             <p><span id="guide-bullet-heading">+HOW TO</span>
-            lawsuit proof your business with a Nevada LLC or corporation</p>
+              lawsuit proof your business with a Nevada LLC or corporation</p>
           </div>
         </div><!-- bullet points container -->
       </div><!-- guide container -->
     </section><!-- Guide -->
-
+    
     <!-- About Cort -->
     <section id="about-section">
       <!-- guide container -->
@@ -103,48 +110,54 @@
         <!-- guide row -->
         <div class="row">
           <!-- copy -->
-          <div class="col-6">
+          <div class="col-md-6 col-sm-12">
             <h2 id="about-heading">Your Partner In Business Formation</h2>
-            <p>Cort Christie, founder of Nevada Corporate Headquarters, and author of The Nevada Edge, has been helping entrepreneurs launch successful businesses since 1989. With over 100,000 entities formed, Cort Christie has proven his ability to create effective asset protection strategies, using the powerful shield of the state of Nevada.</p>
-            <p>In this eBook, you’ll learn why Nevada registers more entities than any other state, and specifically, how it provides maximum protection to safe-guard your assets.</p>
+            <p>Cort Christie, founder of Nevada Corporate Headquarters, and author of The Nevada Edge, has been helping
+              entrepreneurs launch successful businesses since 1989. With over 100,000 entities formed, Cort Christie has
+              proven his ability to create effective asset protection strategies, using the powerful shield of the state of
+              Nevada.</p>
+            <p>In this eBook, you’ll learn why Nevada registers more entities than any other state, and specifically, how
+              it provides maximum protection to safe-guard your assets.</p>
           </div><!-- copy -->
-
+    
           <!-- image -->
-          <div class="col-6">
-            <img src="http://placehold.jp/500x350.png" alt="">
+          <div class="col-md-6 col-sm-12">
+            <img id="about-section-image" src="http://placehold.jp/500x350.png" alt="">
           </div><!-- image -->
         </div><!-- guide row -->
       </div><!-- guide container -->
     </section><!-- About Cort -->
-
+    
     <!-- trustpilot -->
     <section id="tp-section" class="container-fluid">
       <div class="container">
+        <div>
+          <h2 id="tp-section-heading" class="text-center">Read what our raving fans are saying!</h2>
+        </div>
         <div class="row">
-          <div class="trustpilot-widget col-6" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5" data-businessunit-id="51b3db64000064000539d4c7"
-            data-style-height="24px" data-style-width="100%" data-theme="dark">
+          <div id="five-star-widget" class="trustpilot-widget col-3" data-locale="en-US" data-template-id="5419b732fbfb950b10de65e5"
+            data-businessunit-id="51b3db64000064000539d4c7" data-style-height="24px" data-style-width="100%" data-theme="dark">
             <a href="https://www.trustpilot.com/review/nchinc.com" target="_blank">Trustpilot</a>
           </div>
-          <h2 id="tp-section-heading" class="text-center col-6">Read what our raving fans are saying!</h2>
-        </div>
-        <div>
-          
-          <div class="trustpilot-widget" data-locale="en-US" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="51b3db64000064000539d4c7" data-style-height="240px" data-style-width="100%" data-theme="dark" data-stars="1,2,3,4,5">
+          <div class="trustpilot-widget col-9" data-locale="en-US" data-template-id="54ad5defc6454f065c28af8b"
+            data-businessunit-id="51b3db64000064000539d4c7" data-style-height="240px" data-style-width="100%" data-theme="dark"
+            data-stars="1,2,3,4,5">
             <a href="https://www.trustpilot.com/review/nchinc.com" target="_blank">Trustpilot</a>
           </div>
         </div>
       </div>
     </section><!-- trustpilot -->
-
+    
     <!-- footer -->
     <section id="footer-section">
       <div>
-        <p class="text-center">Copyright © 2018 | Nevada Corporate Headquarters, Inc. | All Rights reserved. | Call Now: <a href="#">1-866-410-5023</a></p>
+        <p class="text-center">Copyright © 2018 | Nevada Corporate Headquarters, Inc. | All Rights reserved. | Call Now: <a
+            href="#">1-866-410-5023</a></p>
       </div>
     </section><!-- footer -->
 
   </div><!-- main container -->
-
+  
 
   <!-- trustpilot js -->
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
