@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -66,6 +66,21 @@ p {
   }
 }
 
+/* TESTING */
+#test-header {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+}
+#test-logo {
+  max-height: 50px;
+}
+#test-tel {
+  
+}
+/* TESTING */
+
 #header {
   background-color: rgba(0,0,0,0.7);
   /* border: 2px solid red; */
@@ -79,7 +94,7 @@ p {
 }
 
 #header-logo {
-  max-height: 50px;
+  max-width: 50%;
 }
 
 #header-text {
