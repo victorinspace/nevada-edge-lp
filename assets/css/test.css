@@ -4,13 +4,21 @@
   --main-bg: rgb(32,39,41);
 }
 
-/* header */
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Header */
+/* ------------------------------------------------------------------------------------------ */
 #header-section {
   background-color: var(--main-bg);
   color: #fff;
   padding: 15px;
   max-height: 65px;
   border: 2px solid red;
+  
+  /* flex properties */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -26,10 +34,48 @@
 }
 #header-text {
   display: inline;
-  font-size: 18px;
+  font-size: 20px;
 }
 #header-text a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   color: var(--primary-color);
 }
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Hero */
+/* ------------------------------------------------------------------------------------------ */
+#hero-section {
+  border: 2px solid red;
+
+  /* flex properties */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-content: center; */
+}
+
+#hero-section-width-container {
+  border: 2px solid blue;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.hero-item {
+  border: 2px solid yellow;
+}
+#hero-copy {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#hero-copy h1 {
+  font-size: 3em;
+}
+#hero-copy span {
+  color: var(--primary-color);
+}
+
+/* Form */
+/* ------------------------------------------------------------------------------------------ */
