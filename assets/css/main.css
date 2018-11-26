@@ -1,6 +1,4 @@
-/* ------------------------------------------------------------------------------------------ */
-/* General */
-/* ------------------------------------------------------------------------------------------ */
+/* general */
 :root {
   --primary-color: #00FFD9;
   --main-bg: rgb(32,39,41);
@@ -8,240 +6,132 @@
 
 body {
   font-family: 'Oswald', sans-serif;
+  font-size: 18px;
 }
 
 p {
-  color: #000;
+  font-size: 20px;
 }
-
-.container-fluid {
-  padding-left: 0;
-}
-
-@media (max-width) {
-  /* .the-body {
-    width: 100px;
-  } */
-
-  .container-fluid {
-    padding-left: 0;
-  }
-}
-/* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* Header */
+/* HEADER */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
-  #header {
-    background-color: rgba(0,0,0,0.7);
-    position: relative;
-    margin-left: 0;
-  }
-
-  .navbar {
-    padding: 0px;
-    width: 375px;
-  }
-
-  #header-logo {
-    max-width: 227px;
-    padding-right: 32px;
-  }
-
-  #header-text {
-    font-size: 16px;
-    color: #fff;
-  }
-
-  #header-number {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 576px) {
-  #header {
-    margin-left: 233px;
-  }
-}
-
-/* TESTING */
-#test-header {
-  display: inline-flex;
+#header-section {
+  background-color: var(--main-bg);
+  color: #fff;
+  padding: 45px;
+  height: 65px;
+  
+  
+  /* flex properties */
+  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 20px;
-}
-#test-logo {
-  max-height: 50px;
-}
-#test-tel {
-  
-}
-/* TESTING */
-
-#header {
-  background-color: rgba(0,0,0,0.7);
-  /* border: 2px solid red; */
-  /* margin-left: 233px; */
-  position: absolute;
-  width: 1100px;
-}
-
-.navbar {
-  width: 100%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
 }
 
 #header-logo {
-  max-width: 50%;
+  max-height: 60px;
 }
-
 #header-text {
+  display: inline;
   font-size: 20px;
-  color: #fff;
 }
-
-#header-number {
+#header-text a {
+  text-decoration: none;
   font-size: 25px;
+  font-weight: bold;
   color: var(--primary-color);
 }
+/* HEADER END */
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* Hero */
+/* HERO */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
-  #hero {
-    background-image: url('http://placehold.jp/1000x500.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 200px 0 50px;
-    /* border: 2px solid red; */
-    width: 375px;
-  }
+#hero-section {
+  
+  padding: 2em 0;
 
-  #hero-copy-main {
-    width: 375px;
-    /* border: 2px solid red; */
-  }
-
-  #hero-title {
-    color: #fff;
-  }
-
-  #hero-title > span {
-    color: var(--primary-color)
-  }
-
-  #hero-copy {
-    color: #fff;
-    /* border: 2px solid red; */
-  }
-}
-#hero {
-  background-image: url('http://placehold.jp/1000x500.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 200px 0 50px;
-  /* border: 2px solid red; */
+  /* flex properties */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
 }
 
-#hero-copy-main {
-  /* border: 2px solid red; */
+.hero-item {
+  
+  width: 50%;
 }
-
-#hero-title {
-  color: #fff;
-}
-
-#hero-title > span {
-  color: var(--primary-color)
-}
-
 #hero-copy {
-  color: #fff;
-  /* border: 2px solid red; */
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 575px;
 }
-/* ------------------------------------------------------------------------------------------ */
+#hero-copy h1 {
+  font-size: 3em;
+  margin-bottom: auto;
+  line-height: 1.2;
+}
+#hero-copy span {
+  color: var(--primary-color);
+}
 
-
-/* ------------------------------------------------------------------------------------------ */
 /* Form */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
-  .form {
-    background: var(--primary-color);
-    width: 92%;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    position: relative;
-    /* border: 2px solid red; */
-    margin: auto;
-  }
-
-  .form input {
-    border: none;
-    background: #f2f2f2;
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-  }
-
-  #download-button {
-    width: 100%;
-    text-transform: uppercase;
-    padding: 15px;
-    background: var(--main-bg);
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-  }
-}
-
-.form {
-  background: var(--primary-color);
+#form {
   max-width: 300px;
+  background-color: var(--primary-color);
+  font-size: 20px;
   padding: 25px;
   text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  position: relative;
-  /* border: 2px solid red; */
-  margin: auto;
 }
 
-.form input {
-  border: none;
-  background: #f2f2f2;
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
+form {
+  /* flex properties */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
 }
 
-#download-button {
-  width: 100%;
+#form h3 {
+  font-size: 35px;
+  margin-bottom: 0em;
   text-transform: uppercase;
-  padding: 15px;
-  background: var(--main-bg);
+}
+
+#form input {
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  margin-top: 10px;
+}
+
+#form button {
+  margin: 20px;
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--main-bg);
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
+  text-transform: uppercase;
 }
+/* HERO END */
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* Guide */
+/* GUIDE */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
-  #guide-section {
-    width: 375px;
-    margin-left: 0;
-
-  }
-}
 #guide-section {
   background-color: var(--main-bg);
   color: #fff;
@@ -250,12 +140,13 @@ p {
 
 #guide-section p {
   color: #fff;
+  font-size: 20px;
   font-weight: lighter;
 }
 
 #guide-heading {
   color: var(--primary-color);
-  /* border: 2px solid red; */
+  /*  */
   padding: 30px 0;
 }
 
@@ -263,43 +154,38 @@ p {
   color: var(--primary-color);
   display: block;
 }
+/* GUIDE END */
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* About */
+/* ABOUT */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
-  #about-section {
-    width: 375px;
-  }
-
-  #about-section-image {
-    width: 205px;
-  }
-}
-
 #about-section {
   background-color: #fff;
-  /* border: 2px solid red; */
   padding: 50px 0;
 }
 
 #about-heading {
   color: var(--primary-color);
 }
+
+#about-section-image {
+  width: 100%;
+}
+/* ABOUT END */
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* TrsutPilot */
+/* TRUSTPILOT */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   #tp-section {
     width: 375px;
     margin-left: 0;
   }
-}
+} */
 
 #tp-section {
   background: var(--main-bg);
@@ -308,27 +194,103 @@ p {
 
 #tp-section-heading {
   color: var(--primary-color);
+  padding-bottom: 10px;
 }
 
 #five-star-widget {
-  /* border: 2px solid red; */
+  /*  */
   padding-top: 75px;
   position: absolute;
 }
+/* TRUSTPILOT END */
 /* ------------------------------------------------------------------------------------------ */
 
 
 /* ------------------------------------------------------------------------------------------ */
-/* Footer */
+/* FOOTER */
 /* ------------------------------------------------------------------------------------------ */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   #footer-section {
     width: 375px;
     margin-left: 0;
   }
-}
+} */
 
 #footer-section {
   padding: 30px;
 }
+/* FOOTER END */
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Media Queries */
+/* ------------------------------------------------------------------------------------------ */
+@media screen and (max-width: 830px) {
+  
+  /* header section */
+  /* --------------------------- */
+  #header-section {
+    padding: 40px;  
+  } 
+
+  #header-logo {
+    max-height: 45px;
+    /* margin-top: 10px; */
+  }
+
+  #header-text {
+    height: 55px;
+    margin: 0 auto;
+  }
+
+  /* hero section */
+  /* --------------------------- */
+  .hero-item { 
+    padding: 0 30px;
+  }
+
+  /* hero copy */
+  #hero-copy {
+    width: 80%;
+  }
+
+  /* form */
+  #form {
+    margin: 30px 0;
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  #header-section {
+    padding: 50px;
+  }
+  #header-logo {
+    margin-top: 23px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #header-logo {
+    height: 40px;
+    margin-top: 4px;
+  }
+
+  #header-text {
+    max-height: 45px;
+    margin: 0 auto;
+  }
+
+  #hero-copy h1 {
+    margin-bottom: 10px;
+  }
+
+  /* form */
+  #form {
+    width: 100%;
+  }
+}
+/* Media Queries END */
 /* ------------------------------------------------------------------------------------------ */
