@@ -1,0 +1,35 @@
+/* general */
+:root {
+  --primary-color: #00FFD9;
+  --main-bg: rgb(32,39,41);
+}
+
+/* header */
+#header-section {
+  background-color: var(--main-bg);
+  color: #fff;
+  padding: 15px;
+  max-height: 65px;
+  border: 2px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: baseline;
+}
+.header-item {
+  border: 2px solid yellow;
+}
+#header-logo {
+  max-height: 60px;
+}
+#header-text {
+  display: inline;
+  font-size: 18px;
+}
+#header-text a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--primary-color);
+}
