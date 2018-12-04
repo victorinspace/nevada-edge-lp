@@ -99,7 +99,7 @@ p {
 /* ------------------------------------------------------- */
 #form {
   max-width: 350px;
-  max-height: 465px;
+  /* max-height: 465px; */
   background-color: var(--nv-blue);
   color: #fff;
   font-size: 20px;

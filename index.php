@@ -214,6 +214,7 @@
         <!-- form -->
         <div class="hero-item" id="form">
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+          
             <h3><strong>The Nevada Edge</strong></h3>
             <p>Download your copy today!</p>
             
@@ -230,16 +231,21 @@
             <div class="<?php if (!empty($emailErr)) { echo 'having-error'; } ?>">
               <input type="email" id="email" name="email" value="<?php echo $email;?>" placeholder="E-mail">
             </div>
-            <label for="phone"><?php echo $emailErr;?></label>
+
+            <label for="phone">
+              <?php echo $emailErr;?>
+            </label>
             
             <!-- phone -->
             <div class="<?php if (!empty($phoneErr)) { echo 'having-error'; } ?>">
               <input type="tel" id="phone" name="phone" value="<?php echo $phone;?>" placeholder="Phone">
             </div>
-            <label for="email"><?php echo $phoneErr;?></label>
-            
 
-              <button type="submit"><strong>Download</strong></button>
+            <label for="email">
+              <?php echo $phoneErr;?>
+            </label>
+            
+            <button type="submit"><strong>Download</strong></button>
 
           </form>
         </div><!-- form -->

@@ -1,0 +1,203 @@
+
+.bg-yellow {
+	background-color: #d3bb3c !important;
+}
+
+.bg-green {
+	background-color: #3f5f20 !important;
+}
+
+.header {
+	height: 80px;
+}
+
+.header .navbar {
+    min-height: 80px;
+    top: inherit !important;
+}
+
+.header .navbar .logo {
+
+	line-height: 80px;
+}
+
+.navbar-header {
+	    width: 100%;
+
+}
+
+img.logo-header {
+	max-height: 40px !important;
+	height: 40px !important;
+	max-width: 100% !important;
+}
+
+.tp-dark, .tp-light {
+    width: 387px;
+    height: 20px;
+    max-height: 20px;
+    margin-top: 30px;
+	max-width: 387px;
+}
+
+
+
+.banner p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+   }
+   
+   
+   .col-content {
+    padding-top: 60px;
+}
+
+
+.input-group.having-error {
+border-color: #a94442;
+color: #a94442;
+}
+
+.help-block.text-danger {
+	color: #a94442 !important;
+
+}
+
+.alert-success {
+	background-color: #49b970;
+	border-color: #fff;
+}
+
+.alert>p {
+margin-bottom: 10px;
+color: #fff;
+font-size: 16px;
+}
+
+.toppart {
+	padding-top: 40px !important;
+}
+
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+	
+	.slider .slide--holder img {
+    bottom: -575px;
+	}
+	
+	.slider {
+	height: 725px;
+}
+
+.slider .slide--item {
+    height: 775px;
+}
+	
+	.slider .slide--headline {
+    font-size: 36px;
+    line-height: 48px;
+	}
+	
+	
+	.slider .slide--bio {
+    font-size: 18px;
+    line-height: 1.75;
+	}
+	
+	
+}
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	
+	.tp-dark, .tp-light {
+    width: 350px;
+    height: 18px;
+    max-height: 18px;
+    margin-top: 32px;
+	max-width: 350px;
+}
+
+.toppart {
+	padding-top: 10px !important;
+}
+
+
+.slider {
+	height: 600px;
+}
+
+.slider .slide--item {
+    height: 650px;
+}
+
+
+
+.slider .slide--holder img {
+    max-width: 280px;
+}
+
+
+.col-content {
+    padding: 40px 20px 0 40px !important;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+   }
+
+	
+}
+
+
+
+
+
+@media (max-width: 767px)  {
+
+	a.logo {
+		display: block;
+		width: 100%;
+	}
+	
+	img.logo-header {
+	    margin: 10px auto 0;
+    display: block;
+	}
+	
+	.tplogos {
+		display: block;
+		width: 100%;
+	}
+	
+	.header-fixed .navbar.affix .logo-dark {
+    	display: block;
+	}
+
+	
+	
+	.tp-dark, .tp-light {
+	    
+	    margin: 12px auto !important;
+		display: block;
+	    max-width: 100%;
+	    height: inherit;
+	
+	}
+	
+	
+	.slider .slide--holder img {
+	    
+	    max-width: 200px;
+	    height: auto;
+	    margin: 0 auto;
+	
+	}
+	
+}
+

@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    #PRICING-SECTION
+\*------------------------------------*/
+
+.pricing-panel {
+ border: 1px solid #eeeeee;
+background-color: @color-white;
+  padding: 50px 65px;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	-o-transition: all 0.35s;
+  transition: all 0.35s;
+	position:relative
+}
+
+.pricing-panel:hover {
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.pricing-panel .pricing--heading h4 {
+	color: @color-theme;
+	font-family: @font-body;
+  font-size: 33px;
+	font-weight: 400;
+  line-height: 1;
+  margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.pricing-panel .pricing--heading p {
+  color: #333333;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 15px;
+	text-transform: capitalize;
+}
+
+.pricing-panel .pricing--heading span.currency {
+  font-size: 18px;
+	font-weight: 400;
+	vertical-align: top;
+	top: 10px;
+    position: relative;
+}
+
+
+.pricing-panel .pricing--heading .pricing--desc {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+	margin-bottom: 26px;
+	text-transform: uppercase
+}
+
+.pricing-panel .pricing--body {
+	text-align: center;
+font-size: 16px;
+font-weight: 400;
+}
+.pricing-panel .pricing--body ul {
+	margin-bottom: 40px;
+}
+
+
+.pricing-panel .btn--primary:hover{
+	background-color: @color-hover;
+	border-color:@color-hover;
+	color:@color-white;
+	
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+	.price-table{ margin-bottom: 30px;}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.pricing-panel{ padding: 20px;}
+}
