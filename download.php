@@ -321,7 +321,7 @@ function getRealIpAddr(){
 									
 									<div class="row">
 									
-									<!-- name -->
+										<!-- name input -->
 										<div class="col-sm-6 mb-20">
 									
 											<div class="input-group block <?php if (!empty($full_nameErr)) { echo 'having-error'; } ?>">
@@ -332,9 +332,9 @@ function getRealIpAddr(){
 									  
 											<label class="help-block text-danger" for="full_name"><?php echo $full_nameErr;?></label>
 									  
-										</div>
+										</div><!-- name input -->
 									
-										<!-- phone -->
+										<!-- phone input -->
 										<div class="col-sm-6 mb-20">
 									
 											<div class="input-group block <?php if (!empty($phoneErr)) { echo 'having-error'; } ?>">
@@ -345,11 +345,11 @@ function getRealIpAddr(){
 											
 											<label class="help-block text-danger" for="phone"><?php echo $phoneErr;?></label>
 									
-										</div>
+										</div><!-- phone input -->
 									
 									</div>
 									
-									<!-- email -->
+									<!-- email input -->
 									<div class="input-group <?php if (!empty($emailErr)) { echo 'having-error'; } ?>">
 										
 										<input type="email" class="form-control" name="email" id="email" placeholder="E-mail address" value="<?php echo $email;?>">
@@ -360,7 +360,7 @@ function getRealIpAddr(){
 								  
 										</span>
 									
-									</div>
+									</div><!-- email input -->
 									
 									<label class="help-block text-danger" for="email"><?php echo $emailErr;?></label>
 

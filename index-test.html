@@ -184,8 +184,8 @@
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
 
-  <?php include 'ga-global.php' ?>
-  <?php include 'bing.php' ?>
+  <!-- <?php include 'ga-global.php' ?>
+  <?php include 'bing.php' ?> -->
 
 </head>
 <body>
@@ -196,8 +196,8 @@
     <section>
       <div id="header-section">
         <img class="header-item" id="header-logo" src="./assets/images/logo/NCH-logoANDwordmark-white.png" alt="NCH Logo">
-        <!-- <p class="header-item" id="header-text">Call now: <a href="tel:+1-866-410-5023">1-866-410-5023</a></p> -->
-        <img class="header-item" id="header-text" style="max-width: 37%;" src="./assets/images/content/tp-white.png" alt="Nevada Corporate Headquarters TrustPilot">
+        <p class="header-item" id="header-text">Call now: <a href="tel:+1-866-410-5023">1-866-410-5023</a></p>
+        <!-- <img class="header-item" id="header-text" style="max-width: 37%;" src="./assets/images/content/tp-white.png" alt="Nevada Corporate Headquarters TrustPilot"> -->
       </div>
     </section><!-- header  -->
 
@@ -213,36 +213,46 @@
 
         <!-- form -->
         <div class="hero-item" id="form">
-          <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+          <form class="form-action" method="POST" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]);?>">
+        
             <h3><strong>The Nevada Edge</strong></h3>
             <p>Download your copy today!</p>
-            
-            <!-- name -->
-            <div class="<?php if (!empty($full_nameErr)) { echo 'having-error'; } ?>">
-              <input type="text" id="full_name" name="full_name" value="<?php echo $full_name;?>" placeholder="Full name">
-            </div>
-
-            <label for="full_name">
-              <?php echo $full_nameErr;?>
-            </label>
-            
-            <!-- email -->
-            <div class="<?php if (!empty($emailErr)) { echo 'having-error'; } ?>">
-              <input type="email" id="email" name="email" value="<?php echo $email;?>" placeholder="E-mail">
-            </div>
-            <label for="phone"><?php echo $emailErr;?></label>
-            
-            <!-- phone -->
-            <div class="<?php if (!empty($phoneErr)) { echo 'having-error'; } ?>">
-              <input type="tel" id="phone" name="phone" value="<?php echo $phone;?>" placeholder="Phone">
-            </div>
-            <label for="email"><?php echo $phoneErr;?></label>
-            
-
-              <button type="submit"><strong>Download</strong></button>
-
+        
+            <!-- name input -->
+            <div class="input-group <?php if (!empty($full_nameErr)) { echo 'having-error'; } ?>">
+              <input type="text" class="form-control" id="full_name" name="full_name" value="<?php echo $full_name;?>"
+                placeholder="Your full name">
+        
+              <label class="help-block text-danger" for="full_name">
+                <?php echo $full_nameErr;?>
+              </label>
+            </div><!-- name input -->
+        
+            <!-- email input -->
+            <div class="input-group <?php if (!empty($emailErr)) { echo 'having-error'; } ?>">
+              <input type="email" class="form-control" id="email" name="email" value="<?php echo $email;?>" placeholder="Your e-mail address">
+        
+              <label class="help-block text-danger" for="email">
+                <?php echo $emailErr;?>
+              </label>
+            </div><!-- email input -->
+        
+            <!-- phone input -->
+            <div class="input-group <?php if (!empty($phoneErr)) { echo 'having-error'; } ?>">
+              <input type="tel" class="form-control" id="phone" name="phone" value="<?php echo $phone;?>" placeholder="Your phone number">
+        
+              <label class="help-block text-danger" for="phone">
+                <?php echo $phoneErr;?>
+              </label>
+            </div><!-- phone input -->
+        
+            <button type="submit" class="btn"><strong>Download</strong></button>
+        
           </form>
         </div><!-- form -->
+
+        
+        
     </section><!-- hero -->
 
     <!-- guide -->
