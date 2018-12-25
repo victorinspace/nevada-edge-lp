@@ -41,7 +41,6 @@ p {
 #header-text {
   display: inline;
   font-size: 20px;
-  margin-top: 30px;
 }
 
 #header-text a {
@@ -57,6 +56,8 @@ p {
 /* HERO */
 /* ------------------------------------------------------------------------------------------ */
 #hero-section {
+  /* background: #000; */
+  /* background-image: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f2507356905735cb7d15583034c7faa&auto=format&fit=crop&w=1351&q=80'); */
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f2507356905735cb7d15583034c7faa&auto=format&fit=crop&w=1351&q=80');
   background-repeat: no-repeat;
   background-size: cover;
@@ -296,9 +297,6 @@ form {
 }
 
 @media screen and (max-width: 750px) {
-  #header-logo {
-    /* max-height: 35px; */
-  }
   #header-text {
     font-size: 15px;
     height: 15px;
@@ -327,9 +325,6 @@ form {
   #header-logo {
     line-height: 15px;
     /* max-height: 35px; */
-  }
-  #header-section {
-    /* background-position: center; */
   }
 }
 
